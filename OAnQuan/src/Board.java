@@ -29,7 +29,7 @@ public class Board {
 		
 		while (curPos != 5 && curPos != 11 && cells[curPos] == 0) {
 			curPos = updateCurPos(curPos, direction);
-			if (curPos == 0) break;
+			if (cells[curPos] == 0) break;
 			score +=  cells[curPos];
 			cells[curPos] = 0;
 			curPos = updateCurPos(curPos, direction);
