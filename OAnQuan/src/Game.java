@@ -13,10 +13,6 @@ public class Game {
 	}
 	
 	public void playMove(int startPos, int direction) {
-		if (board.getCells()[startPos] == 0) {
-			System.out.println("Invalid Move");
-			return;
-		}
 		players[curPlayer].addScore(board.move(startPos, direction));
 		changeTurn();
 	}
@@ -61,10 +57,9 @@ public class Game {
 			sum += board.getCells()[i+curPlayer];
 		}
 		if (sum == 0) {
-			for (int i = 0+5*curPlayer; i < 5+5*curPlayer; i++) {
-				players[curPlayer].addScore(-5);
-				board.addPieces(curPlayer);
-			}
+			players[curPlayer].addScore(-5);
+			board.addPieces(curPlayer);
+			for (int i = 5*curPlayer; i < 5+5*curPlayer; i++) moves[i] = 1;
 		}
 		return moves;
 	}
