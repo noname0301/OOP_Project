@@ -46,7 +46,10 @@
             <StackPane prefHeight="200.0" prefWidth="100.0">
                <children>
                   <Arc fill="#f4f6f8" length="180.0" radiusX="100.0" radiusY="100.0" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                  <Label fx:id="value11" text="10" />
+                  <Label fx:id="value11" text="10">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
                </children>
             </StackPane>
             <GridPane gridLinesVisible="true" prefHeight="200.0" prefWidth="635.0">
@@ -66,70 +69,100 @@
                      <children>
                         <Button fx:id="left0" mnemonicParsing="false" text="&lt;" StackPane.alignment="CENTER_LEFT" />
                         <Button fx:id="right0" mnemonicParsing="false" text="&gt;" StackPane.alignment="CENTER_RIGHT" />
-                        <Label fx:id="value0" text="5" />
+                        <Label fx:id="value0" text="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
                      </children>
                   </StackPane>
                   <StackPane fx:id="cell1" layoutX="10.0" layoutY="110.0" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
                         <Button fx:id="left1" mnemonicParsing="false" text="&lt;" StackPane.alignment="CENTER_LEFT" />
                         <Button fx:id="right1" mnemonicParsing="false" text="&gt;" StackPane.alignment="CENTER_RIGHT" />
-                        <Label fx:id="value1" text="5" />
+                        <Label fx:id="value1" text="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
                      </children>
                   </StackPane>
                   <StackPane fx:id="cell2" layoutX="10.0" layoutY="110.0" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <children>
                         <Button fx:id="left2" mnemonicParsing="false" text="&lt;" StackPane.alignment="CENTER_LEFT" />
                         <Button fx:id="right2" mnemonicParsing="false" text="&gt;" StackPane.alignment="CENTER_RIGHT" />
-                        <Label fx:id="value2" text="5" />
+                        <Label fx:id="value2" text="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
                      </children>
                   </StackPane>
                   <StackPane fx:id="cell3" layoutX="10.0" layoutY="110.0" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                      <children>
                         <Button fx:id="left3" mnemonicParsing="false" text="&lt;" StackPane.alignment="CENTER_LEFT" />
                         <Button fx:id="right3" mnemonicParsing="false" text="&gt;" StackPane.alignment="CENTER_RIGHT" />
-                        <Label fx:id="value3" text="5" />
+                        <Label fx:id="value3" text="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
                      </children>
                   </StackPane>
                   <StackPane fx:id="cell4" layoutX="10.0" layoutY="110.0" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
                      <children>
                         <Button fx:id="left4" mnemonicParsing="false" text="&lt;" StackPane.alignment="CENTER_LEFT" />
                         <Button fx:id="right4" mnemonicParsing="false" text="&gt;" StackPane.alignment="CENTER_RIGHT" />
-                        <Label fx:id="value4" text="5" />
+                        <Label fx:id="value4" text="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
                      </children>
                   </StackPane>
                   <StackPane fx:id="cell6" layoutX="10.0" layoutY="110.0" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4">
                      <children>
                         <Button fx:id="right6" mnemonicParsing="false" text="&lt;" StackPane.alignment="CENTER_LEFT" />
                         <Button fx:id="left6" mnemonicParsing="false" text="&gt;" StackPane.alignment="CENTER_RIGHT" />
-                        <Label fx:id="value6" text="5" />
+                        <Label fx:id="value6" text="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
                      </children>
                   </StackPane>
-                  <StackPane fx:id="cell7" layoutX="10.0" layoutY="110.0" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3">
+                  <StackPane fx:id="cell7" layoutX="10.0" layoutY="110.0" prefHeight="110.0" prefWidth="127.0" GridPane.columnIndex="3">
                      <children>
                         <Button fx:id="right7" mnemonicParsing="false" text="&lt;" StackPane.alignment="CENTER_LEFT" />
                         <Button fx:id="left7" mnemonicParsing="false" text="&gt;" StackPane.alignment="CENTER_RIGHT" />
-                        <Label fx:id="value7" text="5" />
+                        <Label fx:id="value7" text="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
                      </children>
                   </StackPane>
                   <StackPane fx:id="cell8" layoutX="10.0" layoutY="110.0" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
                      <children>
                         <Button fx:id="right8" mnemonicParsing="false" text="&lt;" StackPane.alignment="CENTER_LEFT" />
                         <Button fx:id="left8" mnemonicParsing="false" text="&gt;" StackPane.alignment="CENTER_RIGHT" />
-                        <Label fx:id="value8" text="5" />
+                        <Label fx:id="value8" text="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
                      </children>
                   </StackPane>
                   <StackPane fx:id="cell9" layoutX="10.0" layoutY="110.0" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
                      <children>
                         <Button fx:id="right9" mnemonicParsing="false" text="&lt;" StackPane.alignment="CENTER_LEFT" />
                         <Button fx:id="left9" mnemonicParsing="false" text="&gt;" StackPane.alignment="CENTER_RIGHT" />
-                        <Label fx:id="value9" text="5" />
+                        <Label fx:id="value9" text="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
                      </children>
                   </StackPane>
                   <StackPane fx:id="cell10" layoutX="10.0" layoutY="110.0" prefHeight="150.0" prefWidth="200.0">
                      <children>
                         <Button fx:id="right10" mnemonicParsing="false" text="&lt;" StackPane.alignment="CENTER_LEFT" />
                         <Button fx:id="left10" mnemonicParsing="false" text="&gt;" StackPane.alignment="CENTER_RIGHT" />
-                        <Label fx:id="value10" text="5" />
+                        <Label fx:id="value10" text="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Label>
                      </children>
                   </StackPane>
                </children>
@@ -137,7 +170,10 @@
             <StackPane prefHeight="200.0" prefWidth="100.0">
                <children>
                   <Arc fill="#f4f6f8" length="180.0" radiusX="100.0" radiusY="100.0" startAngle="270.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                  <Label fx:id="value5" text="10" />
+                  <Label fx:id="value5" text="10">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
                </children>
             </StackPane>
          </children>
