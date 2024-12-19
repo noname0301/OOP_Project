@@ -204,6 +204,11 @@
                   <Font size="24.0" />
                </font>
             </Label>
+            <Button fx:id="playAgainButton" mnemonicParsing="false" onAction="#playAgain" prefHeight="51.0" prefWidth="174.0" text="Play Again">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
          </children>
       </VBox>
    </children>

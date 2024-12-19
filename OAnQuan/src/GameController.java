@@ -29,6 +29,8 @@ public class GameController {
     @FXML
     private Label score1, score2, curTurn, gameOverText, winner;
     
+    @FXML
+    private Button playAgainButton;
     
     @FXML
     public void initialize() {
@@ -41,6 +43,24 @@ public class GameController {
     	game = new Game();
     	gameOverText.setVisible(false);
     	winner.setVisible(false);
+    	playAgainButton.setVisible(false);
+    	playAgainButton.setFocusTraversable(false);
+    	
+    	for (Button button : buttons) {
+    		button.setVisible(false);
+    		button.setFocusTraversable(false);
+    		button.setOnAction(e -> handlePlay(e));
+    	}
+    	
+    	handleCurTurn();
+    }
+    
+    @FXML
+    private void playAgain() {
+    	game = new Game();
+    	gameOverText.setVisible(false);
+    	winner.setVisible(false);
+    	playAgainButton.setVisible(false);
     	
     	
     	for (Button button : buttons) {
@@ -50,6 +70,7 @@ public class GameController {
     	}
     	
     	handleCurTurn();
+    	updateValues();
     }
     
     private void handleMouseEntered(MouseEvent event) {
@@ -128,5 +149,6 @@ public class GameController {
     	gameOverText.setVisible(true);
     	winner.setText(game.gameCondition());
     	winner.setVisible(true);
+    	playAgainButton.setVisible(true);
     }
 }
