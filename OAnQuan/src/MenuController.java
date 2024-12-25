@@ -24,6 +24,7 @@ public class MenuController {
         loader.setController(controller);
         Parent root = loader.load();
         stage.setScene(new Scene(root));
+        stage.centerOnScreen();
     }
     
     @FXML
