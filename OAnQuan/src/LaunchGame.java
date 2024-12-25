@@ -25,7 +25,7 @@ public class LaunchGame extends Application {
 
         // Set and show the scene
         primaryStage.setScene(new Scene(root));
-        primaryStage.setTitle("JavaFX Window Example");
+        primaryStage.setTitle("O an quan");
         primaryStage.show();
     }
 

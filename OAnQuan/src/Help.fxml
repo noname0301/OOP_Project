@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="65.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="207.0" layoutY="18.0" text="Luật chơi ô ăn quan">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" focusTraversable="false" layoutX="499.0" layoutY="13.0" mnemonicParsing="false" onAction="#back" prefWidth="81.0" text="Back">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextArea cacheShape="false" editable="false" focusTraversable="false" layoutX="17.0" layoutY="60.0" prefHeight="321.0" prefWidth="566.0" text="Bạn sẽ trở thành người chiến thắng trong trò chơi khi kết quả cuối cùng có số dân lớn hơn. 1 quan sẽ thường được quy ra thành 5 hoặc 10 dân.&#10;&#10;Trong quá trình rải, có một số tình huống có thể xảy ra:&#10;- Nếu ô liền kề sau ô cuối cùng mà được rải là một ô có quân, người chơi sẽ tiếp tục sử dụng số quân ở ô đó và tiếp tục rải tiếp theo chiều như trên.&#10;- Nếu ô liền kề sau đó là một ô trống, sau đó đến một ô có quân, người chơi sẽ mất lượt và số quân trong ô đó sẽ bị loại khỏi bàn chơi để tính điểm.&#10;- Nếu như ô liền kề ngay sau ô bị mất lượt là một ô trống, sau đó lại đến ô có quân, người chơi sẽ được ăn số quân ở ô đó và có thể tính toán làm sao để ăn hết số quân chỉ trong một lượt chơi.&#10;- Nếu một ô chứa rất nhiều quân, được gọi là ô nhà giàu, người chơi có thể tích nhiều quân vào đó và ăn hết một lần để tích điểm.&#10;- Nếu ô liền tiếp phía sau là 2 ô trống hoặc ô ăn quan có chứa quân ngay sau khi vừa ăn ở ô trước, người chơi sẽ mất lượt.&#10;- Nếu đến lượt chơi mà tất cả các ô thuộc quyền kiểm soát đều trống, người chơi sẽ phải sử dụng 5 quân dân vừa ăn được và rải đều vào 5 ô khác để tiếp tục di chuyển.&#10;- Nếu người chơi không có đủ 5 quân dân, họ có thể mượn từ đối thủ và sau đó trả lại khi tính điểm.&#10;&#10;Vòng chơi được xem là kết thúc khi 2 ô quan đã hết quân." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

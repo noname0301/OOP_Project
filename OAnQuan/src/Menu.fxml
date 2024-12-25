@@ -15,9 +15,19 @@
                   <Font size="64.0" />
                </font>
             </Label>
-            <Button fx:id="playButton" mnemonicParsing="false" onAction="#playGame" prefHeight="102.0" prefWidth="230.0" text="Play">
+            <Button fx:id="playButton" mnemonicParsing="false" onAction="#playGame" prefHeight="37.0" prefWidth="218.0" text="Play">
                <font>
-                  <Font size="48.0" />
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="helpButton" mnemonicParsing="false" onAction="#openHelp" prefHeight="19.0" prefWidth="216.0" text="Help">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exit" prefHeight="0.0" prefWidth="217.0" text="Exit">
+               <font>
+                  <Font size="24.0" />
                </font>
             </Button>
          </children>

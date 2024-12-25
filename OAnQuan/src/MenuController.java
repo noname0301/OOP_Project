@@ -15,7 +15,7 @@ public class MenuController {
 		this.stage = stage;
 	}
 	@FXML
-    private Button playButton;
+    private Button playButton, helpButton, exitButton;
 	
     @FXML
     void playGame(ActionEvent event) throws IOException {
@@ -26,4 +26,25 @@ public class MenuController {
         stage.setScene(new Scene(root));
     }
     
+    @FXML
+    private void initialize() {
+    	playButton.setFocusTraversable(false);
+    	helpButton.setFocusTraversable(false);
+    	exitButton.setFocusTraversable(false);
+    }
+    
+    @FXML
+    private void openHelp() throws IOException {
+    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/Help.fxml"));
+    	HelpController controller = new HelpController();
+    	controller.setStage(stage);
+        loader.setController(controller);
+        Parent root = loader.load();
+        stage.setScene(new Scene(root));
+    }
+    
+    @FXML
+    private void exit() {
+    	stage.close();
+    }
 }
