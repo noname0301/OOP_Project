@@ -3,6 +3,7 @@ public class Game {
 	private Board board;
 	private Player[] players;
 	private int curPlayer;
+	private int rent;
 	
 	public Game() {
 		board = new Board();
@@ -10,6 +11,7 @@ public class Game {
 		players[0] = new Player(0);
 		players[1] = new Player(1);
 		curPlayer = 0;
+		rent = 0;
 	}
 	
 	public void playMove(int startPos, int direction) {
@@ -58,6 +60,11 @@ public class Game {
 		}
 		if (sum == 0) {
 			players[curPlayer].addScore(-5);
+//			else {
+//				players[1-curPlayer].addScore(5-players[curPlayer].getScore());
+//				rent += (curPlayer == 1 ? 5-players[curPlayer].getScore() : players[curPlayer].getScore()-5);
+//				players[curPlayer].addScore(-players[curPlayer].getScore());
+//			}
 			board.addPieces(curPlayer);
 			for (int i = 5*curPlayer; i < 5+5*curPlayer; i++) moves[i] = 1;
 		}

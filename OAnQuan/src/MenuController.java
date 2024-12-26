@@ -22,6 +22,7 @@ public class MenuController {
     	FXMLLoader loader = new FXMLLoader(getClass().getResource("/Game.fxml"));
         GameController controller = new GameController();
         loader.setController(controller);
+        controller.setStage(stage);
         Parent root = loader.load();
         stage.setScene(new Scene(root));
         stage.centerOnScreen();

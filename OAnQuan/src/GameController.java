@@ -1,11 +1,16 @@
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Labeled;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
 public class GameController {
 	
@@ -13,6 +18,12 @@ public class GameController {
 	private Button[] buttons;
 	private Label[] values;
 	private StackPane[] stackPanes;
+	
+	private Stage stage;
+	
+	public void setStage(Stage stage) {
+		this.stage = stage;
+	}
 	
     @FXML
     private Button left0, right0, left1, right1, left2, right2, left3, right3, left4, right4, 
@@ -30,7 +41,7 @@ public class GameController {
     private Label score1, score2, curTurn, gameOverText, winner;
     
     @FXML
-    private Button playAgainButton;
+    private Button playAgainButton, exitButton;
     
     @FXML
     public void initialize() {
@@ -53,6 +64,16 @@ public class GameController {
     	}
     	
     	handleCurTurn();
+    }
+    
+    @FXML
+    private void exit() throws IOException {
+    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/Menu.fxml"));
+        Parent root = loader.load();
+        MenuController controller = loader.getController();
+        controller.setStage(stage);
+        stage.setScene(new Scene(root));
+        stage.centerOnScreen();
     }
     
     @FXML

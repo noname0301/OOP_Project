@@ -19,8 +19,4 @@ public class Player {
 	public void addScore(int points) {
 		score += points;
 	}
-	
-	public void getMove() {
-		
-	}
 }
