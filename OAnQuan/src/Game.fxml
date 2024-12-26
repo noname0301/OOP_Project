@@ -11,9 +11,9 @@
 <?import javafx.scene.shape.Arc?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <HBox alignment="CENTER" prefHeight="96.0" prefWidth="1024.0" spacing="10.0">
          <children>
             <Label text="Current turn:">
                <font>
@@ -27,7 +27,7 @@
             </Label>
          </children>
       </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <HBox alignment="CENTER" prefHeight="88.0" prefWidth="1024.0" spacing="10.0">
          <children>
             <Label text="Player 2 score:">
                <font>
@@ -178,7 +178,7 @@
             </StackPane>
          </children>
       </HBox>
-      <HBox alignment="CENTER" prefHeight="95.0" prefWidth="1024.0" spacing="10.0">
+      <HBox alignment="CENTER" prefHeight="88.0" prefWidth="1024.0" spacing="10.0">
          <children>
             <Label text="Player 1 score:">
                <font>
@@ -192,7 +192,7 @@
             </Label>
          </children>
       </HBox>
-      <VBox alignment="CENTER" prefHeight="148.0" prefWidth="1024.0" spacing="10.0">
+      <VBox alignment="CENTER" prefHeight="148.0" prefWidth="1024.0" spacing="20.0">
          <children>
             <Label fx:id="gameOverText" text="Game Over!">
                <font>
